@@ -16,7 +16,7 @@ namespace {
         Rcpp::Environment base_env = Rcpp::Environment::base_env();
         Rcpp::Function system_file = base_env["system.file"];
         
-        std::string scripts_path = Rcpp::as<std::string>(system_file(Rcpp::Named("package", "Ryacas"), "yacas"));
+        std::string scripts_path = Rcpp::as<std::string>(system_file(Rcpp::Named("package", "Ryacas0"), "yacas"));
         
         // During development, the path can be overwritten
         if (!alternative_path.empty()) {
