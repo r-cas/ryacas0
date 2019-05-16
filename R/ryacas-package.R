@@ -1,27 +1,27 @@
 #' R interface to yacas computer algebra package
 #' 
-#' Ryacas allows one to use the yacas computer algebra package entirely from
+#' Ryacas0 allows one to use the yacas computer algebra package entirely from
 #' within R.  It takes an R expression, an R one line function or a yacas
 #' string and returns an R expression or a variety of other formats.  It can be
 #' used for symbolic mathematics, exact arithmetic, ASCII pretty printing and R
 #' to TeX conversions.  The main command is \code{yacas} and \code{?yacas}
 #' provides some information on installation and startup.
 #' 
-#' The following are sources of information on \code{"Ryacas"}: \tabular{ll}{
-#' DESCRIPTION file\tab library(help = Ryacas)\cr List of demo files\tab
-#' demo(package = "Ryacas")\cr Demo file\tab demo("Ryacas")\cr Demo\tab
-#' demo("Ryacas-PrettyPrinter")\cr Demo\tab demo("Ryacas-Function")\cr Demo\tab
-#' demo("Ryacas-Sym")\cr Demo\tab demo("Ryacas-Expr")\cr List Vignettes\tab
-#' vignette(package = "Ryacas")\cr Vignette\tab vignette("Ryacas")\cr This
-#' File\tab package?Ryacas\cr Help files\tab ?yacas, ?yacasTranslations,
+#' The following are sources of information on \code{"Ryacas0"}: \tabular{ll}{
+#' DESCRIPTION file\tab library(help = Ryacas0)\cr List of demo files\tab
+#' demo(package = "Ryacas0")\cr Demo file\tab demo("Ryacas0")\cr Demo\tab
+#' demo("Ryacas0-PrettyPrinter")\cr Demo\tab demo("Ryacas0-Function")\cr Demo\tab
+#' demo("Ryacas0-Sym")\cr Demo\tab demo("Ryacas0-Expr")\cr List Vignettes\tab
+#' vignette(package = "Ryacas0")\cr Vignette\tab vignette("Ryacas0")\cr This
+#' File\tab package?Ryacas0\cr Help files\tab ?yacas, ?yacasTranslations,
 #' ?yacmode, ?Sym\cr Help files - Windows\tab ?yacasInstall\cr News\tab
-#' RShowDoc("NEWS", package = "Ryacas")\cr Acknowledgements\tab
-#' RShowDoc("THANKS", package = "Ryacas")\cr Wish List\tab RShowDoc("WISHLIST",
-#' package = "Ryacas")\cr Home page\tab http://code.google.com/p/ryacas/\cr }
+#' RShowDoc("NEWS", package = "Ryacas0")\cr Acknowledgements\tab
+#' RShowDoc("THANKS", package = "Ryacas0")\cr Wish List\tab RShowDoc("WISHLIST",
+#' package = "Ryacas0")\cr Home page\tab https://github.com/mikldk/ryacas0/\cr }
 #' 
-#' @name Ryacas-package
+#' @name Ryacas0-package
 #' @docType package
-#' @useDynLib Ryacas, .registration = TRUE
+#' @useDynLib Ryacas0, .registration = TRUE
 #' @importFrom Rcpp evalCpp
 #' @importFrom stats deriv
 #' @note There is a note in the help file of the \link{yacas} command that
@@ -67,7 +67,7 @@ NULL
 #' integrate(f, a, b)\tab \tab Integrate(x, a, b)f(x)\cr list()\tab \tab
 #' List()\cr factorial(n)\tab \tab n!\cr }
 #'
-#' Note the Limit example in demo(Ryacas) for adding translations on the fly.
+#' Note the Limit example in demo(Ryacas0) for adding translations on the fly.
 #'
 #' The complete table under development.
 #' @author Rob J Goedman

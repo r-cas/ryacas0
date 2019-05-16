@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Convert character vector to yacas object — as.Sym.character • Ryacas0</title>
+<title>R interface to yacas computer algebra package — Ryacas0-package • Ryacas0</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,9 +30,14 @@
 
 
 
-<meta property="og:title" content="Convert character vector to yacas object — as.Sym.character" />
+<meta property="og:title" content="R interface to yacas computer algebra package — Ryacas0-package" />
 
-<meta property="og:description" content="Simple and raw conversion to yacas" />
+<meta property="og:description" content="Ryacas0 allows one to use the yacas computer algebra package entirely from
+within R.  It takes an R expression, an R one line function or a yacas
+string and returns an R expression or a variety of other formats.  It can be
+used for symbolic mathematics, exact arithmetic, ASCII pretty printing and R
+to TeX conversions.  The main command is yacas and ?yacas
+provides some information on installation and startup." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -123,46 +128,69 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Convert character vector to yacas object</h1>
-    <small class="dont-index">Source: <a href='https://github.com/mikldk/ryacas0/blob/master/R/Sym2.R'><code>R/Sym2.R</code></a></small>
-    <div class="hidden name"><code>as.Sym.character.Rd</code></div>
+    <h1>R interface to yacas computer algebra package</h1>
+    <small class="dont-index">Source: <a href='https://github.com/mikldk/ryacas0/blob/master/R/ryacas-package.R'><code>R/ryacas-package.R</code></a></small>
+    <div class="hidden name"><code>Ryacas0-package.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Simple and raw conversion to yacas</p>
+    <p>Ryacas0 allows one to use the yacas computer algebra package entirely from
+within R.  It takes an R expression, an R one line function or a yacas
+string and returns an R expression or a variety of other formats.  It can be
+used for symbolic mathematics, exact arithmetic, ASCII pretty printing and R
+to TeX conversions.  The main command is <code>yacas</code> and <code><a href='yacas.html'>?yacas</a></code>
+provides some information on installation and startup.</p>
     
     </div>
 
-    <pre class="usage"><span class='co'># S3 method for character</span>
-<span class='fu'><a href='Sym.html'>as.Sym</a></span>(<span class='no'>x</span>, <span class='no'>...</span>)</pre>
+        
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+
+    <p>The following are sources of information on <code>"Ryacas0"</code>:</p><table class='table'>
+<tr><td></td><td>DESCRIPTION file</td></tr>
+<tr><td>library(help = Ryacas0)</td><td>List of demo files</td></tr>
+<tr><td></td><td>demo(package = "Ryacas0")</td></tr>
+<tr><td>Demo file</td><td>demo("Ryacas0")</td></tr>
+<tr><td>Demo</td><td></td></tr>
+<tr><td>demo("Ryacas0-PrettyPrinter")</td><td>Demo</td></tr>
+<tr><td>demo("Ryacas0-Function")</td><td>Demo</td></tr>
+<tr><td></td><td>demo("Ryacas0-Sym")</td></tr>
+<tr><td>Demo</td><td>demo("Ryacas0-Expr")</td></tr>
+<tr><td>List Vignettes</td><td></td></tr>
+<tr><td>vignette(package = "Ryacas0")</td><td>Vignette</td></tr>
+<tr><td>vignette("Ryacas0")</td><td>This</td></tr>
+<tr><td>File</td><td>package?Ryacas0</td></tr>
+<tr><td>Help files</td><td>?yacas, ?yacasTranslations,</td></tr>
+<tr><td>?yacmode, ?Sym</td><td>Help files - Windows</td></tr>
+<tr><td>?yacasInstall</td><td>News</td></tr>
+<tr><td></td><td>RShowDoc("NEWS", package = "Ryacas0")</td></tr>
+<tr><td>Acknowledgements</td><td></td></tr>
+<tr><td>RShowDoc("THANKS", package = "Ryacas0")</td><td>Wish List</td></tr>
+<tr><td>RShowDoc("WISHLIST",</td><td>package = "Ryacas0")</td></tr>
+<tr><td>Home page</td><td>https://github.com/mikldk/ryacas0/</td></tr>
+<tr><td></td><td></td></tr>
+</table>
     
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
-    <table class="ref-arguments">
-    <colgroup><col class="name" /><col class="desc" /></colgroup>
-    <tr>
-      <th>x</th>
-      <td><p>An R character vector.</p></td>
-    </tr>
-    <tr>
-      <th>&#8230;</th>
-      <td><p>Not used</p></td>
-    </tr>
-    </table>
+    <h2 class="hasAnchor" id="note"><a class="anchor" href="#note"></a>Note</h2>
+
+    <p>There is a note in the help file of the <a href='yacas.html'>yacas</a> command that
+discusses a number of installation and startup issues.</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/c'>c</a></span>(<span class='st'>"a"</span>, <span class='st'>"2"</span>, <span class='st'>"4"</span>, <span class='st'>"c"</span>, <span class='st'>"d"</span>, <span class='st'>"6"</span>)
-<span class='no'>x</span></div><div class='output co'>#&gt; [1] "a" "2" "4" "c" "d" "6"</div><div class='input'><span class='no'>y</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='Sym.html'>as.Sym</a></span>(<span class='no'>x</span>)
-<span class='no'>y</span></div><div class='output co'>#&gt; Yacas vector:
-#&gt; [1] a 2 4 c d 6</div><div class='input'><span class='fu'><a href='Eval.html'>Eval</a></span>(<span class='no'>y</span>, <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/list'>list</a></span>(<span class='kw'>a</span> <span class='kw'>=</span> <span class='fl'>3</span>, <span class='kw'>c</span> <span class='kw'>=</span> <span class='fl'>3</span>, <span class='kw'>d</span> <span class='kw'>=</span> <span class='fl'>3</span>))</div><div class='output co'>#&gt; [1] 3 2 4 3 3 6</div><div class='input'>
+    <pre class="examples"><div class='input'>
+<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/print'>print</a></span>(<span class='fu'><a href='yacas.html'>yacas</a></span>(<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/expression'>expression</a></span>(<span class='fu'><a href='https://www.rdocumentation.org/packages/stats/topics/integrate'>integrate</a></span>(<span class='fl'>1</span>/<span class='no'>x</span>, <span class='no'>x</span>))))</div><div class='output co'>#&gt; yacas_expression(log(x))</div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/print'>print</a></span>(<span class='fu'><a href='yacas.html'>yacas</a></span>(<span class='st'>"Integrate(x)1/x"</span>))</div><div class='output co'>#&gt; yacas_expression(log(x))</div><div class='input'><span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='Sym.html'>Sym</a></span>(<span class='st'>"x"</span>); <span class='fu'><a href='Sym.html'>Integrate</a></span>(<span class='fl'>1</span>/<span class='no'>x</span>, <span class='no'>x</span>)</div><div class='output co'>#&gt; yacas_expression(log(x))</div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/Trig'>acos</a></span>(<span class='fu'><a href='Sym.html'>Sym</a></span>(<span class='st'>"1/2"</span>))</div><div class='output co'>#&gt; yacas_expression(pi/3)</div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#arguments">Arguments</a></li>
-            
+      
+      <li><a href="#details">Details</a></li>
+
+      <li><a href="#note">Note</a></li>
+      
       <li><a href="#examples">Examples</a></li>
     </ul>
 

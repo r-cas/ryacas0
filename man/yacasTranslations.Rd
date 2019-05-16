@@ -29,7 +29,7 @@ gamma(x)\tab \tab Gamma(x)\cr deriv(sin, x)\tab \tab Deriv(x)Sin(x)\cr
 integrate(f, a, b)\tab \tab Integrate(x, a, b)f(x)\cr list()\tab \tab
 List()\cr factorial(n)\tab \tab n!\cr }
 
-Note the Limit example in demo(Ryacas) for adding translations on the fly.
+Note the Limit example in demo(Ryacas0) for adding translations on the fly.
 
 The complete table under development.
 }

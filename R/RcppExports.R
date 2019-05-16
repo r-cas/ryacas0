@@ -2,7 +2,7 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 yacas_init_force <- function(path) {
-    invisible(.Call(`_Ryacas_yacas_init_force`, path))
+    invisible(.Call(`_Ryacas0_yacas_init_force`, path))
 }
 
 #' Evaluate yacas expression
@@ -19,6 +19,6 @@ yacas_init_force <- function(path) {
 #' 
 #' @export
 yacas_evaluate <- function(expr) {
-    .Call(`_Ryacas_yacas_evaluate`, expr)
+    .Call(`_Ryacas0_yacas_evaluate`, expr)
 }
 
