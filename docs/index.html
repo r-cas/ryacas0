@@ -99,8 +99,17 @@
 <div id="install-from-github" class="section level2">
 <h2 class="hasAnchor">
 <a href="#install-from-github" class="anchor"></a>Install from github</h2>
-<p>To build and install from github using R 3.3.0 (or later) and the R devtools package 1.11.0 (or later) run this command from within R:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode R"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1">devtools<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/devtools/topics/reexports">install_github</a></span>(<span class="st">"mikldk/ryacas0"</span>)</a></code></pre></div>
+<p>To build and install from github using R 3.3.0 (or later) and the R devtools package 1.11.0 (or later) run this command from within <code>R</code>:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode R"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># without vignettes</span></a>
+<a class="sourceLine" id="cb1-2" title="2">devtools<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/devtools/topics/reexports">install_github</a></span>(<span class="st">"mikldk/ryacas0"</span>)</a></code></pre></div>
+<p>This will not install the vignettes. If you want to have those included, then instead run</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="co"># with vignettes</span></a>
+<a class="sourceLine" id="cb2-2" title="2">devtools<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/devtools/topics/reexports">install_github</a></span>(<span class="st">"mikldk/ryacas0"</span>, </a>
+<a class="sourceLine" id="cb2-3" title="3">                         <span class="dt">build_opts =</span> <span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="st">"--no-resave-data"</span>, <span class="st">"--no-manual"</span>))</a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="co"># after installation</span></a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/help">help</a></span>(<span class="dt">package =</span> Ryacas0)</a>
+<a class="sourceLine" id="cb2-6" title="6"><span class="co"># or</span></a>
+<a class="sourceLine" id="cb2-7" title="7"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/vignette">vignette</a></span>(<span class="dt">package =</span> <span class="st">"Ryacas0"</span>)</a></code></pre></div>
 </div>
 <div id="online-info" class="section level2">
 <h2 class="hasAnchor">
@@ -112,8 +121,8 @@
 <h2 class="hasAnchor">
 <a href="#more" class="anchor"></a>More</h2>
 <p>Once <code>Ryacas0</code> is installed, pointers to additional information can be found with these R commands:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(Ryacas0)</a>
-<a class="sourceLine" id="cb2-2" title="2">package?Ryacas0</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(Ryacas0)</a>
+<a class="sourceLine" id="cb3-2" title="2">package?Ryacas0</a></code></pre></div>
 </div>
 <div id="yacas" class="section level2">
 <h2 class="hasAnchor">
