@@ -19,9 +19,21 @@ pretty printing and translating R to TeX.
 
 ## Install from github ##
 
-To build and install from github using R 3.3.0 (or later) and the R devtools package 1.11.0 (or later) run this command from within R:
+To build and install from github using R 3.3.0 (or later) and the R devtools package 1.11.0 (or later) run this command from within `R`:
 
+    # without vignettes
     devtools::install_github("mikldk/ryacas0")
+
+This will not install the vignettes. If you want to have those included, then 
+instead run
+
+    # with vignettes
+    devtools::install_github("mikldk/ryacas0", 
+                             build_opts = c("--no-resave-data", "--no-manual"))
+    # after installation
+    help(package = Ryacas0)
+    # or
+    vignette(package = "Ryacas0")
 
 ## Online info ##
 
