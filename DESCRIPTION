@@ -1,5 +1,5 @@
 Package: Ryacas0
-Version: 0.4.1.9000
+Version: 0.4.2
 Title: Legacy version of Ryacas (R Interface to the Yacas Computer Algebra System)
 Authors@R: c(
     person(given = "Mikkel Meyer", family = "Andersen",
