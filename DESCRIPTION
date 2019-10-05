@@ -1,6 +1,6 @@
 Package: Ryacas0
 Version: 0.4.2
-Title: Legacy version of Ryacas (R Interface to the Yacas Computer Algebra System)
+Title: Legacy Version of 'Ryacas' (R Interface to the 'Yacas' Computer Algebra System)
 Authors@R: c(
     person(given = "Mikkel Meyer", family = "Andersen",
         email = "mikl@math.aau.dk", role = c("aut", "cre")),
@@ -17,7 +17,7 @@ Authors@R: c(
   )
 Maintainer: Mikkel Meyer Andersen <mikl@math.aau.dk>
 Encoding: UTF-8
-Description: A legacy version of Ryacas, an interface to the yacas computer algebra system.
+Description: A legacy version of 'Ryacas', an interface to the 'yacas' computer algebra system.
 Depends: R (>= 3.3.0)
 Imports:
     methods,
