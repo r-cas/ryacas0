@@ -12,7 +12,7 @@ yacmode(enable_history = TRUE)
 \value{
 Output of yacas is returned.
 
-Last output
+invisible NULL
 }
 \description{
 Interactive interface to the yacas
