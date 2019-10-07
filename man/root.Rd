@@ -11,6 +11,9 @@ root(x, y)
 
 \item{y}{Root}
 }
+\value{
+The root y'th root of x
+}
 \description{
 The $y$'th root of $x$, i.e. $x^(1/y)$.
 }

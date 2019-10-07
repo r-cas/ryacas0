@@ -11,6 +11,9 @@ stripvar(expr, var)
 
 \item{var}{Name of variable, e.g. \code{x}}
 }
+\value{
+Expression with left-hand side removed
+}
 \description{
 Yacas' \code{Solve(eq, x)} can return e.g.
 \code{x == expr} and \code{{x == expr1, x == expr2, ...}}.

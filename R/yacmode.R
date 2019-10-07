@@ -25,6 +25,7 @@
 #' }
 #' 
 #' @importFrom utils loadhistory savehistory
+#' @return Last output
 #' @export
 yacmode <- function(enable_history = TRUE) {
   # Enable history in yacmode()
@@ -50,6 +51,8 @@ yacmode <- function(enable_history = TRUE) {
   
   cat("Enter Yacas commands here. Type quit to return to R\n")
   x <- readline("Yacas->")
+  
+  o <- NULL
 
   while (length(which(c("stop;", "stop", "end;", "end", "quit;",
                         "quit", "exit;", "exit", "e;", "e", "q;", "q", "q()", "\n") == x)) ==
@@ -80,6 +83,8 @@ yacmode <- function(enable_history = TRUE) {
     
     x <- readline("Yacas->")
   }
+  
+  return(o)
 }
 
 

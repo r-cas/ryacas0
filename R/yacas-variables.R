@@ -1,5 +1,7 @@
 #' Get Yacas variables
 #' 
+#' @return Vector of variables defined in yacas
+#' 
 #' @export
 y_ls <- function() {
   x <- yacas("Variables()", addSemi = FALSE, retclass = "character")

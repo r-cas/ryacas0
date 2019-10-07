@@ -136,6 +136,8 @@ determinant.Expr <- function(x, ...)
 #' 
 #' @keywords symbolmath
 #' 
+#' @return Expression with left-hand side removed
+#' 
 #' @export
 stripvar <- function(expr, var) {
   # NOTE: Is it necessary to use Yacas?

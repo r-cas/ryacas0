@@ -60,6 +60,8 @@ the first component is an R expression and the \code{OMForm} component
 contains OpenMath XML code.  In other cases the first component is NULL and
 the \code{YacasForm} or \code{PrettyForm} components have display
 information.
+
+Generally an expression. Refer to details.
 }
 \description{
 Interface to the yacas computer algebra system.

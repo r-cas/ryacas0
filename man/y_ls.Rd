@@ -6,6 +6,9 @@
 \usage{
 y_ls()
 }
+\value{
+Vector of variables defined in yacas
+}
 \description{
 Get Yacas variables
 }

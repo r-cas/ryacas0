@@ -111,6 +111,8 @@
 #' 
 #' # see demo("Ryacas-Function")
 #' 
+#' @return Generally an expression. Refer to details.
+#' 
 #' @export
 yacas <- function(x, ...)
   UseMethod("yacas")

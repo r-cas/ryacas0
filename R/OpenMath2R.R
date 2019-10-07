@@ -225,6 +225,8 @@ colnames(transtab) <- c("R", "OM", "yacas")
 #' @param x Number to take $y$'th root of
 #' @param y Root
 #' 
+#' @return The root y'th root of x
+#' 
 #' @export
 root <- function(x, y) {
 	(x)^(1/(y))
