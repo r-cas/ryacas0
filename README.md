@@ -1,10 +1,10 @@
 # `Ryacas0`: Legacy version of `Ryacas` #
 
-[![Build Status](https://travis-ci.org/mikldk/ryacas0.svg?branch=master)](https://travis-ci.org/mikldk/ryacas0)
-[![Build status](https://ci.appveyor.com/api/projects/status/21ffy6m7scx92ctk?svg=true)](https://ci.appveyor.com/project/mikldk/ryacas0/branch/master)
+[![Build Status](https://travis-ci.org/r-cas/ryacas0.svg?branch=master)](https://travis-ci.org/r-cas/ryacas0)
+[![Build status](https://ci.appveyor.com/api/projects/status/21ffy6m7scx92ctk?svg=true)](https://ci.appveyor.com/project/r-cas/ryacas0/branch/master)
 
 
-`Ryacas0` is a legacy version of [`Ryacas`](https://github.com/mikldk/ryacas).
+`Ryacas0` is a legacy version of [`Ryacas`](https://github.com/r-cas/ryacas).
 
 `Ryacas0` is an [R](https://www.r-project.org/) interface to
 the free [yacas](http://www.yacas.org) Computer Algebra
@@ -22,13 +22,13 @@ pretty printing and translating R to TeX.
 To build and install from github using R 3.3.0 (or later) and the R devtools package 1.11.0 (or later) run this command from within `R`:
 
     # without vignettes
-    devtools::install_github("mikldk/ryacas0")
+    devtools::install_github("r-cas/ryacas0")
 
 This will not install the vignettes. If you want to have those included, then 
 instead run
 
     # with vignettes
-    devtools::install_github("mikldk/ryacas0", 
+    devtools::install_github("r-cas/ryacas0", 
                              build_opts = c("--no-resave-data", "--no-manual"))
     # after installation
     help(package = Ryacas0)
@@ -38,7 +38,7 @@ instead run
 ## Online info ##
 
 For vignettes, overview, pointers to additional information, installation
-instructions and a sample session see <http://mikldk.github.io/ryacas0/>. 
+instructions and a sample session see <http://r-cas.github.io/ryacas0/>. 
 
 Yacas documentation can be found at http://yacas.readthedocs.org/
 

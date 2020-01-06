@@ -16,8 +16,8 @@ Expression with left-hand side removed
 }
 \description{
 Yacas' \code{Solve(eq, x)} can return e.g.
-\code{x == expr} and \code{{x == expr1, x == expr2, ...}}.
-Some usages are easier if the initial \code{x == } part is removed.
+\code{x == expr} and \verb{\{x == expr1, x == expr2, ...\}}.
+Some usages are easier if the initial \verb{x == } part is removed.
 This is the purpose of this function.
 }
 \keyword{symbolmath}

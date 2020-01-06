@@ -135,7 +135,7 @@ help(Ops) for a list).  Also there are methods for a number of R generics:
 Conjugate, Expand, Factor, Factorial, I, Identity, Infinity, Integrate,
 Inverse, InverseTaylor, Limit, List, N, Newton, Pi, Precision, PrettyForm,
 PrettyPrinter, Set, Simplify, Solve, Subst, Taylor, TeXForm, Transpose,
-Ver and "%Where%" all of which have the same meaning as the corresponding yacas
+Ver and "\%Where\%" all of which have the same meaning as the corresponding yacas
 commands. Try \code{vignette("Rycas-Sym")} for many examples.
 
 Get \code{Sym} objects with \code{getSyms()}.

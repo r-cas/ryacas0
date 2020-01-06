@@ -7,7 +7,7 @@
 Ryacas_options(...)
 }
 \arguments{
-\item{...}{Option names to retrieve option values or \code{[key] = [value]} pairs to set options.}
+\item{...}{Option names to retrieve option values or \verb{[key] = [value]} pairs to set options.}
 }
 \description{
 Set or get options for the Ryacas package

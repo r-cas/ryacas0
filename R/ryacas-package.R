@@ -17,7 +17,7 @@
 #' ?yacmode, ?Sym\cr Help files - Windows\tab ?yacasInstall\cr News\tab
 #' RShowDoc("NEWS", package = "Ryacas0")\cr Acknowledgements\tab
 #' RShowDoc("THANKS", package = "Ryacas0")\cr Wish List\tab RShowDoc("WISHLIST",
-#' package = "Ryacas0")\cr Home page\tab https://github.com/mikldk/ryacas0/\cr }
+#' package = "Ryacas0")\cr Home page\tab https://github.com/r-cas/ryacas0/\cr }
 #' 
 #' @name Ryacas0-package
 #' @docType package
