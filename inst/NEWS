@@ -18,7 +18,7 @@ o Internal
   - Enabled use of devtools::load_all() via .onLoad() and .yacas_init_force()
   - Converted to Roxygen documentation
   - Vignettes in Rmarkdown format
-  - pkgdown for GitHub Pages for http://mikldk.github.io/ryacas/
+  - pkgdown for GitHub Pages for http://r-cas.github.io/ryacas/
 
 Changes in version 0.3-4
 
