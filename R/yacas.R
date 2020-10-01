@@ -269,12 +269,14 @@ yacas.expression <- function(x, ...) {
 }
    
 yparse <- function(x) {
-    if (!is.expression(x)) return
+    if (!is.expression(x)) {
+      return()
+    }
     options(show.error.messages = FALSE)
 	# ynext does all translations, yrewrite special rewriting
     x[[1]] <- yrewrite(ynext(x[[1]]))
     options(show.error.messages = TRUE)
-    x[[1]]
+    return(x[[1]])
 }
 
 ynext <- function(x) {

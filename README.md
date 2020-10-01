@@ -38,7 +38,7 @@ instead run
 ## Online info ##
 
 For vignettes, overview, pointers to additional information, installation
-instructions and a sample session see <http://r-cas.github.io/ryacas0/>. 
+instructions and a sample session see <https://r-cas.github.io/ryacas0/>. 
 
 Yacas documentation can be found at http://yacas.readthedocs.org/
 

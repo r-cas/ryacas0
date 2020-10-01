@@ -1,5 +1,5 @@
-pandoc: 2.3.1
-pkgdown: 1.4.1
+pandoc: '2.5'
+pkgdown: 1.5.1
 pkgdown_sha: ~
 articles:
   elaborate-reference: elaborate-reference.html
@@ -7,4 +7,5 @@ articles:
   latent-variable-model: latent-variable-model.html
   ssm-matrix: ssm-matrix.html
   sym-matrix-vector: sym-matrix-vector.html
+last_built: 2020-09-29T17:31Z
 

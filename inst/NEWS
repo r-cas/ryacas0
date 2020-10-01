@@ -1,3 +1,7 @@
+Changes in version 0.4.3
+
+o Fix missing '()' after 'return' in the yparse() function
+
 Changes in version 0.4.2
 
 o Yacas errors are now provided to the user instead of just an empty result

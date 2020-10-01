@@ -18,7 +18,7 @@ Currently supported translations are:
 =====\cr pi\tab \tab Pi\cr }
 
 \tabular{lll}{ OPERATORS\tab \tab \cr R\tab \tab yacas\cr =\tab \tab
-=====\cr 7 \\%\\% 3\tab \tab Mod(7, 3)\cr 7 \\%\/\\% 3\tab \tab Div(7, 3)\cr }
+=====\cr 7 \\\%\\\% 3\tab \tab Mod(7, 3)\cr 7 \\\%\/\\\% 3\tab \tab Div(7, 3)\cr }
 
 \tabular{lll}{ FUNCTIONS\tab \tab \cr R\tab \tab yacas\cr =\tab \tab
 =====\cr sin(x)\tab \tab Sin(x)\cr cos(x)\tab \tab Cos(x)\cr tan(x)\tab \tab
