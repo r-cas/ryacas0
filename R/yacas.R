@@ -96,7 +96,7 @@
 #' 
 #' \tabular{ll}{ R\tab yacas\cr sin(x)\tab Sin(x)\cr deriv(sin, x)\tab
 #' Deriv(x)Sin(x)\cr log(x)\tab Ln(x)\cr }
-#' @references \url{http://yacas.sourceforge.net}
+#' @references \url{http://www.yacas.org/}
 #' @keywords symbolmath
 #' @examples
 #' 

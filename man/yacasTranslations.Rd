@@ -34,7 +34,7 @@ Note the Limit example in demo(Ryacas0) for adding translations on the fly.
 The complete table under development.
 }
 \references{
-\url{http://yacas.sourceforge.net}
+\url{http://www.yacas.org/}
 }
 \author{
 Rob J Goedman

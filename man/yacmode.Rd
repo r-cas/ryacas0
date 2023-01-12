@@ -39,6 +39,6 @@ yacmode()
 
 }
 \references{
-\url{http://yacas.sourceforge.net}
+\url{http://www.yacas.org/}
 }
 \keyword{symbolmath}

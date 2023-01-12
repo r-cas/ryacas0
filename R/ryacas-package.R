@@ -71,6 +71,6 @@ NULL
 #'
 #' The complete table under development.
 #' @author Rob J Goedman
-#' @references \url{http://yacas.sourceforge.net}
+#' @references \url{http://www.yacas.org/}
 #' @keywords symbolmath
 NULL

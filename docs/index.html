@@ -19,6 +19,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -31,23 +33,17 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">Ryacas0</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.4.3</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.4.4</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
-  <a href="index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
-<li>
   <a href="reference/index.html">Reference</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Articles
      
     <span class="caret"></span>
@@ -73,8 +69,8 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/r-cas/ryacas0/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/r-cas/ryacas0/" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -90,46 +86,47 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="ryacas0-legacy-version-of-ryacas" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#ryacas0-legacy-version-of-ryacas" class="anchor"></a><code>Ryacas0</code>: Legacy version of <code>Ryacas</code>
+<div class="section level1">
+<div class="page-header"><h1 id="ryacas0-legacy-version-of-ryacas">
+<code>Ryacas0</code>: Legacy version of <code>Ryacas</code>
+<a class="anchor" aria-label="anchor" href="#ryacas0-legacy-version-of-ryacas"></a>
 </h1></div>
-
-<p><code>Ryacas0</code> is a legacy version of <a href="https://github.com/r-cas/ryacas"><code>Ryacas</code></a>.</p>
-<p><code>Ryacas0</code> is an <a href="https://www.r-project.org/">R</a> interface to the free <a href="http://www.yacas.org">yacas</a> Computer Algebra System. <code>Ryacas0</code> allows one to send R expressions, unprocessed yacas strings and certain other R objects to yacas process from R and get back the result. It also has facilities for manipulating yacas strings and R expressions destined for yacas processing.</p>
+<p><a href="https://travis-ci.org/r-cas/ryacas0" class="external-link"><img src="https://travis-ci.org/r-cas/ryacas0.svg?branch=master" alt="Build Status"></a> <a href="https://ci.appveyor.com/project/r-cas/ryacas0/branch/master" class="external-link"><img src="https://ci.appveyor.com/api/projects/status/21ffy6m7scx92ctk?svg=true" alt="Build status"></a></p>
+<p><code>Ryacas0</code> is a legacy version of <a href="https://github.com/r-cas/ryacas" class="external-link"><code>Ryacas</code></a>.</p>
+<p><code>Ryacas0</code> is an <a href="https://www.r-project.org/" class="external-link">R</a> interface to the free <a href="http://www.yacas.org" class="external-link">yacas</a> Computer Algebra System. <code>Ryacas0</code> allows one to send R expressions, unprocessed yacas strings and certain other R objects to yacas process from R and get back the result. It also has facilities for manipulating yacas strings and R expressions destined for yacas processing.</p>
 <p>It can be used for exact arithmetic, symbolic math, ASCII pretty printing and translating R to TeX.</p>
-<div id="install-from-github" class="section level2">
-<h2 class="hasAnchor">
-<a href="#install-from-github" class="anchor"></a>Install from github</h2>
+<div class="section level2">
+<h2 id="install-from-github">Install from github<a class="anchor" aria-label="anchor" href="#install-from-github"></a>
+</h2>
 <p>To build and install from github using R 3.3.0 (or later) and the R devtools package 1.11.0 (or later) run this command from within <code>R</code>:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode R"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="co"># without vignettes</span></a>
-<a class="sourceLine" id="cb1-2" title="2">devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">"r-cas/ryacas0"</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># without vignettes</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"r-cas/ryacas0"</span>)</span></code></pre></div>
 <p>This will not install the vignettes. If you want to have those included, then instead run</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="co"># with vignettes</span></a>
-<a class="sourceLine" id="cb2-2" title="2">devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">"r-cas/ryacas0"</span>, </a>
-<a class="sourceLine" id="cb2-3" title="3">                         <span class="dt">build_opts =</span> <span class="kw">c</span>(<span class="st">"--no-resave-data"</span>, <span class="st">"--no-manual"</span>))</a>
-<a class="sourceLine" id="cb2-4" title="4"><span class="co"># after installation</span></a>
-<a class="sourceLine" id="cb2-5" title="5"><span class="kw">help</span>(<span class="dt">package =</span> Ryacas0)</a>
-<a class="sourceLine" id="cb2-6" title="6"><span class="co"># or</span></a>
-<a class="sourceLine" id="cb2-7" title="7"><span class="kw">vignette</span>(<span class="dt">package =</span> <span class="st">"Ryacas0"</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># with vignettes</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"r-cas/ryacas0"</span>, </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>                         <span class="at">build_opts =</span> <span class="fu">c</span>(<span class="st">"--no-resave-data"</span>, <span class="st">"--no-manual"</span>))</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># after installation</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">help</span>(<span class="at">package =</span> Ryacas0)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># or</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">vignette</span>(<span class="at">package =</span> <span class="st">"Ryacas0"</span>)</span></code></pre></div>
 </div>
-<div id="online-info" class="section level2">
-<h2 class="hasAnchor">
-<a href="#online-info" class="anchor"></a>Online info</h2>
-<p>For vignettes, overview, pointers to additional information, installation instructions and a sample session see <a href="https://r-cas.github.io/ryacas0/" class="uri">https://r-cas.github.io/ryacas0/</a>.</p>
-<p>Yacas documentation can be found at <a href="http://yacas.readthedocs.org/" class="uri">http://yacas.readthedocs.org/</a></p>
+<div class="section level2">
+<h2 id="online-info">Online info<a class="anchor" aria-label="anchor" href="#online-info"></a>
+</h2>
+<p>For vignettes, overview, pointers to additional information, installation instructions and a sample session see <a href="https://r-cas.github.io/ryacas0/" class="external-link uri">https://r-cas.github.io/ryacas0/</a>.</p>
+<p>Yacas documentation can be found at <a href="http://yacas.readthedocs.org/" class="external-link uri">http://yacas.readthedocs.org/</a></p>
 </div>
-<div id="more" class="section level2">
-<h2 class="hasAnchor">
-<a href="#more" class="anchor"></a>More</h2>
+<div class="section level2">
+<h2 id="more">More<a class="anchor" aria-label="anchor" href="#more"></a>
+</h2>
 <p>Once <code>Ryacas0</code> is installed, pointers to additional information can be found with these R commands:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">library</span>(Ryacas0)</a>
-<a class="sourceLine" id="cb3-2" title="2">package?Ryacas0</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(Ryacas0)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>package?Ryacas0</span></code></pre></div>
 </div>
-<div id="yacas" class="section level2">
-<h2 class="hasAnchor">
-<a href="#yacas" class="anchor"></a>Yacas</h2>
-<p>The package contains stripped-down yacas distribution. For the complete yacas source code see <a href="https://github.com/grzegorzmazur/yacas/" class="uri">https://github.com/grzegorzmazur/yacas/</a> . For more information on yacas see <a href="http://www.yacas.org/" class="uri">http://www.yacas.org/</a>.</p>
+<div class="section level2">
+<h2 id="yacas">Yacas<a class="anchor" aria-label="anchor" href="#yacas"></a>
+</h2>
+<p>The package contains stripped-down yacas distribution. For the complete yacas source code see <a href="https://github.com/grzegorzmazur/yacas/" class="external-link uri">https://github.com/grzegorzmazur/yacas/</a> . For more information on yacas see <a href="http://www.yacas.org/" class="external-link uri">http://www.yacas.org/</a>.</p>
 <hr>
 <p>Mikkel Meyer Andersen, mikl at math dot aau dot dk<br>
 Rob Goedman, goedman at mac dot com<br>
@@ -143,24 +140,31 @@ Grzegorz Mazur, teoretyk at gmail dot com</p>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
-<h2>Links</h2>
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=Ryacas0">https://​cloud.r-project.org/​package=Ryacas0</a>
-</li>
-<li>Browse source code at <br><a href="https://github.com/r-cas/ryacas0/">https://​github.com/​r-cas/​ryacas0/​</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/r-cas/ryacas0/issues">https://​github.com/​r-cas/​ryacas0/​issues</a>
-</li>
+<li><a href="https://cloud.r-project.org/package=Ryacas0" class="external-link">View on CRAN</a></li>
+<li><a href="https://github.com/r-cas/ryacas0/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/r-cas/ryacas0/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
+
 <div class="license">
-<h2>License</h2>
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
-<li><a href="https://www.r-project.org/Licenses/GPL-2">GPL-2</a></li>
+<li><a href="https://www.r-project.org/Licenses/GPL-2" class="external-link">GPL-2</a></li>
 </ul>
 </div>
+
+
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
+<ul class="list-unstyled">
+<li><a href="authors.html#citation">Citing Ryacas0</a></li>
+</ul>
+</div>
+
 <div class="developers">
-<h2>Developers</h2>
+<h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
 <li>Mikkel Meyer Andersen <br><small class="roles"> Author, maintainer, copyright holder </small>  </li>
 <li>Rob Goedman <br><small class="roles"> Author, copyright holder </small>  </li>
@@ -168,27 +172,24 @@ Grzegorz Mazur, teoretyk at gmail dot com</p>
 <li>Søren Højsgaard <br><small class="roles"> Author, copyright holder </small>  </li>
 <li>Grzegorz Mazur <br><small class="roles"> Author, copyright holder </small>  </li>
 <li>Ayal Pinkus <br><small class="roles"> Author, copyright holder </small>  </li>
-<li><a href="authors.html">All authors...</a></li>
+<li><a href="authors.html">More about authors...</a></li>
 </ul>
 </div>
 
-  <div class="dev-status">
-<h2>Dev status</h2>
-<ul class="list-unstyled">
-<li><a href="https://travis-ci.org/r-cas/ryacas0"><img src="https://travis-ci.org/r-cas/ryacas0.svg?branch=master" alt="Build Status"></a></li>
-<li><a href="https://ci.appveyor.com/project/r-cas/ryacas0/branch/master"><img src="https://ci.appveyor.com/api/projects/status/21ffy6m7scx92ctk?svg=true" alt="Build status"></a></li>
-</ul>
-</div>
-</div>
+
+
+  </div>
 </div>
 
 
       <footer><div class="copyright">
-  <p>Developed by Mikkel Meyer Andersen, Rob Goedman, Gabor Grothendieck, Søren Højsgaard, Grzegorz Mazur, Ayal Pinkus.</p>
+  <p></p>
+<p>Developed by Mikkel Meyer Andersen, Rob Goedman, Gabor Grothendieck, Søren Højsgaard, Grzegorz Mazur, Ayal Pinkus.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer>
@@ -196,6 +197,8 @@ Grzegorz Mazur, teoretyk at gmail dot com</p>
 
   
 
+
+  
 
   </body>
 </html>

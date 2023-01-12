@@ -1,3 +1,7 @@
+Changes in version 0.4.4
+
+o CRAN fix
+
 Changes in version 0.4.3
 
 o Fix missing '()' after 'return' in the yparse() function
