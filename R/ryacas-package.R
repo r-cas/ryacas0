@@ -20,7 +20,6 @@
 #' package = "Ryacas0")\cr Home page\tab https://github.com/r-cas/ryacas0/\cr }
 #' 
 #' @name Ryacas0-package
-#' @docType package
 #' @useDynLib Ryacas0, .registration = TRUE
 #' @importFrom Rcpp evalCpp
 #' @importFrom stats deriv
@@ -34,7 +33,7 @@
 #' x <- Sym("x"); Integrate(1/x, x)
 #' acos(Sym("1/2"))
 #' 
-NULL
+"_PACKAGE"
 
 
 #' Yacas translations

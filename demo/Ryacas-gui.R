@@ -2,7 +2,7 @@
 ## create a gui which asks for an R expression in x.  The code sets 
 ## the expression to zero and solves for x showing the result.
 
-library(Ryacas)
+#library(Ryacas0)
 library(tcltk)
 
 fun <- function(instring) {

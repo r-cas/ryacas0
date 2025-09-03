@@ -2,6 +2,7 @@
 % Please edit documentation in R/ryacas-package.R
 \docType{package}
 \name{Ryacas0-package}
+\alias{Ryacas0}
 \alias{Ryacas0-package}
 \title{R interface to yacas computer algebra package}
 \description{
@@ -35,6 +36,33 @@ print(yacas(expression(integrate(1/x, x))))
 print(yacas("Integrate(x)1/x"))
 x <- Sym("x"); Integrate(1/x, x)
 acos(Sym("1/2"))
+
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/r-cas/ryacas0}
+  \item \url{http://www.yacas.org}
+  \item Report bugs at \url{https://github.com/r-cas/ryacas0/issues}
+}
+
+}
+\author{
+\strong{Maintainer}: Mikkel Meyer Andersen \email{mikl@math.aau.dk} [copyright holder]
+
+Authors:
+\itemize{
+  \item Rob Goedman \email{goedman@mac.com} [copyright holder]
+  \item Gabor Grothendieck \email{ggrothendieck@gmail.com} [copyright holder]
+  \item Søren Højsgaard \email{sorenh@math.aau.dk} [copyright holder]
+  \item Grzegorz Mazur \email{teoretyk@gmail.com} [copyright holder]
+  \item Ayal Pinkus \email{apinkus@xs4all.nl} [copyright holder]
+}
+
+Other contributors:
+\itemize{
+  \item Nemanja Trifunovic (UTF-8 part of yacas (src/yacas/include/yacas/utf8*)) [copyright holder]
+}
 
 }
 \keyword{programming}

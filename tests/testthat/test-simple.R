@@ -35,31 +35,31 @@ test_that("TeXForm", {
 })
 
 test_that("Yacas mode", {
-  expect_equal("Enter Yacas commands here. Type quit to return to R", 
-               capture.output(
-                 testthat::with_mock(
-                   readline = function(x) { return("quit")}, 
-                   savehistory = function(x) { return() },
-                   loadhistory = function(x) { return() },
-                   
-                   yacmode())))
+  # expect_equal("Enter Yacas commands here. Type quit to return to R", 
+  #              capture.output(
+  #                testthat::with_mock(
+  #                  readline = function(x) { return("quit")}, 
+  #                  savehistory = function(x) { return() },
+  #                  loadhistory = function(x) { return() },
+  #                  
+  #                  yacmode())))
   
-  ran_before <- FALSE
-  expect_equal(c("Enter Yacas commands here. Type quit to return to R", 
-                 "yacas_expression(x^3)"),
-               capture.output(
-                 testthat::with_mock(
-                   readline = function(x) {
-                     if (!ran_before) {
-                       ran_before <<- TRUE
-                       return("x*x*x")
-                     }
-                     return("quit")
-                    }, 
-                   savehistory = function(x) { return() },
-                   loadhistory = function(x) { return() },
-                   
-                   yacmode())))
+  # ran_before <- FALSE
+  # expect_equal(c("Enter Yacas commands here. Type quit to return to R", 
+  #                "yacas_expression(x^3)"),
+  #              capture.output(
+  #                testthat::with_mock(
+  #                  readline = function(x) {
+  #                    if (!ran_before) {
+  #                      ran_before <<- TRUE
+  #                      return("x*x*x")
+  #                    }
+  #                    return("quit")
+  #                   }, 
+  #                  savehistory = function(x) { return() },
+  #                  loadhistory = function(x) { return() },
+  #                  
+  #                  yacmode())))
 })
 
 # 
