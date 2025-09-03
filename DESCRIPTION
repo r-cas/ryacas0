@@ -1,5 +1,5 @@
 Package: Ryacas0
-Version: 0.4.4
+Version: 0.4.5
 Title: Legacy 'Ryacas' (Interface to 'Yacas' Computer Algebra System)
 Authors@R: c(
     person(given = "Mikkel Meyer", family = "Andersen",
