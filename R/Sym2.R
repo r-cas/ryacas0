@@ -297,11 +297,13 @@ Taylor.default <- function(f, x, a, n, ...)
 	Sym("Taylor(", x, ",", a, ",", n, ")", f) 
 
 #' @export
-InverseTaylor <- function(x, ...) UseMethod("Taylor")
+InverseTaylor <- function(f, x, a, n, ...) UseMethod("InverseTaylor")
+#InverseTaylor <- function(x, ...) UseMethod("Taylor")
 
 #' @export
-InverseTaylor.default <- function(f, x, a, n, ...) 
+InverseTaylor.default <- function(f, x, a, n, ...) {
 	Sym("InverseTaylor(", x, ",", a, ",", n, ")", f) 
+}
 
 #' @export
 PrettyForm <- function(x, ...) UseMethod("PrettyForm")
