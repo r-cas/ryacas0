@@ -37,6 +37,7 @@ Suggests:
     rmarkdown,
     igraph,
     testthat
+SystemRequirements: C++14
 License: GPL-2
 URL: https://github.com/r-cas/ryacas0, http://www.yacas.org
 BugReports: https://github.com/r-cas/ryacas0/issues

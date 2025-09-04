@@ -1,9 +1,5 @@
 # `Ryacas0`: Legacy version of `Ryacas` #
 
-[![Build Status](https://travis-ci.org/r-cas/ryacas0.svg?branch=master)](https://travis-ci.org/r-cas/ryacas0)
-[![Build status](https://ci.appveyor.com/api/projects/status/21ffy6m7scx92ctk?svg=true)](https://ci.appveyor.com/project/r-cas/ryacas0/branch/master)
-
-
 `Ryacas0` is a legacy version of [`Ryacas`](https://github.com/r-cas/ryacas).
 
 `Ryacas0` is an [R](https://www.r-project.org/) interface to
